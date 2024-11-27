@@ -12,5 +12,4 @@ function nextSlide() {
     updateSlidePosition();
 }
 
-// Automatically change slides every 5 seconds
 setInterval(nextSlide, 5000);

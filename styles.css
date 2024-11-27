@@ -45,7 +45,7 @@ button:hover {
 .navbar .logo img {
     height: 50px;
 
-    
+   
 }
 
 
@@ -58,7 +58,7 @@ button:hover {
 }
 
 .nav-links a {
-    color: blue;
+    color: white;
     font-size: 1rem;
     transition: color 0.3s ease;
     
@@ -71,7 +71,7 @@ button:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 33vh; /* Set to 1/3 of the screen height */
+    height: 33vh; 
     overflow: hidden;
 }
 
