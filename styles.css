@@ -1,0 +1,168 @@
+/* General Styles */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: goldenrod;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo img {
+    height: 50px;
+
+    
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+        
+}
+
+.nav-links a {
+    color: blue;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 33vh; /* Set to 1/3 of the screen height */
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Store Section */
+.store {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.store h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    width: 200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-item button {
+    background: #ff8000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.product-item button:hover {
+    background: #ff8c1a;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
