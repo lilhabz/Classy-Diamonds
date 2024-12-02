@@ -67,7 +67,38 @@ button:hover {
 .nav-links a:hover {
     color: black;
 }
+/* Icons Container */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+}
 
+/* Individual Icons */
+.navbar-icons .icon {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-icons .icon:hover {
+    color: black;
+}
+
+/* Cart Item Count Badge */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
 /* Hero Section */
 .hero {
     position: relative;
