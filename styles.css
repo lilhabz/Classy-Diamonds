@@ -1,3 +1,11 @@
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+    }
+}
+
+
+
 /* General Styles */
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -196,4 +204,51 @@ footer {
     color: #fff;
     font-size: 0.9rem;
     flex-shrink: 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
+
+.footer-bottom {
+    padding: 1px;
+}
+
+
+footer p {
+    margin-top: auto; 
+    color: yellow;
+    padding-top: 20px; 
+}
+
+
+.client-care-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    max-width: 100%;
+    width: 100%; 
+}
+
+
+.client-care h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-align: left;
+    padding-left: 45px;
+}
+
+.client-care ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.client-care ul li {
+    margin-bottom: 0.3em;
+}
+
+
