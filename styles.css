@@ -205,6 +205,20 @@ button:hover {
     color: #000;
 }
 
+.view-more-product{
+    padding: 10px;
+}
+.view-more-product button {
+    background: #ff8000;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.view-more-product button:hover {
+    background: #ff8c1a;
+    color: #000;
+}
 /*Custom section*/
 .custom-home {
     padding: 50px 20px;
