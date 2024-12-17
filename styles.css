@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .product-grid {
         flex-direction: column;
     }
@@ -46,10 +46,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 30px; /* Increased padding */
     background: goldenrod;
     color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem; /* Increased font size for navbar */
 }
 
 .navbar .logo img {
@@ -65,7 +66,7 @@ button:hover {
 
 .nav-links a {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem; /* Increased font size for links */
     transition: color 0.3s ease;
 }
 
@@ -78,12 +79,13 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-size: 1.5rem;;
 }
 
 .navbar-icons .icon {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -95,12 +97,12 @@ button:hover {
 /* Cart Item Count Badge */
 .cart-count {
     position: absolute;
-    top: -8px;
+    top: -10px;
     right: -10px;
     background-color: navy;
     color: white;
-    font-size: 0.7rem;
-    padding: 2px 6px;
+    font-size: 14px; /* Increased font size */
+    padding: 5px 10px; /* Added padding */
     border-radius: 50%;
     font-weight: bold;
 }
@@ -136,9 +138,8 @@ button:hover {
 }
 
 .store h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size */
     margin-bottom: 20px;
-    text-align: center; /* Ensure the "Store" heading is centered */
 }
 
 .product-grid {
@@ -169,13 +170,13 @@ button:hover {
 }
 
 .product-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased product name font size */
     color: #333;
     margin-bottom: 10px;
 }
 
 .product-item p {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Increased price font size */
     color: #777;
     margin-bottom: 15px;
 }
@@ -192,7 +193,7 @@ button:hover {
 }
 
 .view-more-product {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -216,17 +217,15 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Center the text in the container */
+    text-align: center;
     background: #f7f7f7;
 }
 
 .custom-home h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased heading font size */
     margin-bottom: 20px;
-    text-align: center; /* Center the "Past Custom Creations" heading */
 }
 
-/* Custom Grid */
 .custom-grid {
     display: flex;
     flex-wrap: wrap;
@@ -256,22 +255,21 @@ button:hover {
 }
 
 .custom-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased product name size */
     color: #333;
     margin-bottom: 10px;
 }
 
 .custom-item p {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Increased description size */
     color: #777;
     margin-bottom: 15px;
 }
 
-/* Custom Creation Button */
 .custom-creation {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .custom-creation button {
@@ -295,9 +293,9 @@ footer {
 }
 
 .client-care-container {
-    display: flex;
-    justify-content: center;
+    display: flex;   
     gap: 40px;
+    padding: 20px;
 }
 
 .client-care h3 {
