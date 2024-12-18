@@ -403,11 +403,9 @@ footer {
     .navbar-icons {
         display: none;
     }
-    .hero {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
 
     .store {
         margin-top: 0;
         padding-top: 0;
+    }
+}
