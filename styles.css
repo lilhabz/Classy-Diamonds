@@ -33,6 +33,10 @@ button:hover {
 }
 
 /* Navbar */
+.hamburger-menu {
+    display: none;
+}
+
 .navbar {
     position: sticky;
     top: 0;
