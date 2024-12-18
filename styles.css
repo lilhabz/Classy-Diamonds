@@ -354,12 +354,21 @@ footer {
         height: auto; /* Allow flexible height */
         margin-bottom: 0; /* Remove extra bottom margin */
     }
-
-    .slide img {
-        width: 100%; /* Full width for all images */
-        height: 100%; /* Adjust height dynamically */
-        object-fit: cover; /* Ensure images maintain aspect ratio */
+    .slide {
+        min-width: 100%; /* Full width for each slide */
+        height: auto; /* Allow flexible height */
+        max-height: 50vh; /* Limit height to half the viewport */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .slide img {
+        width: 100%; /* Scale image to full width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Prevent distortion while scaling */
+        max-height: 50vh; /* Limit the height to avoid oversizing */
+    }
+    
 
     .slideshow {
         display: flex;
@@ -367,10 +376,7 @@ footer {
         height: 100%; /* Ensure the slideshow matches image height */
     }
 
-    .slide {
-        min-width: 100%; /* Each slide takes full width */
-        height: 60vh; /* Consistent slide height for landscape and portrait */
-    }
+    
 
     /* Store Section Adjustments */
     .store {
