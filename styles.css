@@ -409,3 +409,29 @@ footer {
         padding-top: 0;
     }
 }
+
+/* Responsive adjustments for the hero section */
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Allow height to adapt based on content */
+        min-height: 50vh; /* Provide a reasonable minimum height */
+    }
+    .hero img {
+        object-fit: contain; /* Prevent cropping for small screens */
+    }
+    
+    .store {
+        margin-top: 0; /* Remove unnecessary margins above the store section */
+    }
+}
+
+/* Adjust spacing between sections */
+.hero {
+    margin-bottom: 0; /* Remove bottom margin to prevent gaps */
+}
+
+.store {
+    padding-top: 20px; /* Add padding to maintain separation without large gaps */
+}
+
+
