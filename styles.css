@@ -327,111 +327,68 @@ footer {
 
 
 
-
-
-
-
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
+    /* Navbar Adjustments */
     .hamburger-menu {
-        display: block; /* Show the hamburger menu */
+        display: block; /* Show hamburger menu */
         margin-right: 20px;
     }
 
     .nav-links {
-        display: none; /* Hide navigation links initially */
+        display: none; /* Hide navigation links by default */
         flex-direction: column;
         position: absolute;
-        top: 100%;
-        right: 0;
-        background: #5A7D9A;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show navigation links when active */
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 10px 0;
-    }
-}
-
-
-
-/* Default Navbar Behavior */
-.nav-links {
-    display: flex; /* Keep flex layout for larger screens */
-    gap: 40px;
-    list-style: none;
-}
-
-/* Responsive Styles for Smaller Screens */
-@media (max-width: 768px) {
-    /* Hide the nav-links in the navbar */
-    .nav-links {
-        display: none; /* Hidden by default on smaller screens */
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Position the links below the navbar */
+        top: 100%; /* Position below the navbar */
         right: 0;
         width: 100%; /* Full-width dropdown */
-        background: #5A7D9A; /* Match navbar background */
+        background: #5A7D9A;
         z-index: 1000;
         padding: 20px 0;
         text-align: center;
     }
 
-    /* Show nav-links when hamburger menu is active */
     .nav-links.active {
         display: flex; /* Show links when active */
     }
 
-    /* Adjust spacing between nav items */
     .nav-links li {
+        text-align: center;
         padding: 10px 0;
     }
 
-    /* Ensure the hamburger menu displays properly */
-    .hamburger-menu {
-        display: block; /* Show the hamburger menu */
-    }
-
-    /* Hide the navbar icons for mobile if needed */
     .navbar-icons {
-        display: none;
+        display: none; /* Hide navbar icons for mobile */
     }
 
-    .store {
-        margin-top: 0;
-        padding-top: 0;
-    }
-}
-
-/* Responsive adjustments for the hero section */
-@media (max-width: 768px) {
+    /* Hero Section Adjustments */
     .hero {
-        height: auto; /* Allow height to adapt based on content */
-        min-height: 50vh; /* Provide a reasonable minimum height */
+        height: auto; /* Allow flexible height */
+        margin-bottom: 0; /* Remove extra bottom margin */
     }
-    .hero img {
-        object-fit: contain; /* Prevent cropping for small screens */
+
+    .slide img {
+        width: 100%; /* Full width for all images */
+        height: 60vh; /* Consistent height for seamless slides */
+        object-fit: cover; /* Maintain aspect ratio while filling the space */
     }
-    
+
+    .slideshow {
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%; /* Each slide takes full width */
+    }
+
+    /* Store Section Adjustments */
     .store {
-        margin-top: 0; /* Remove unnecessary margins above the store section */
+        margin-top: 0; /* Remove unnecessary margin above */
+        padding-top: 10px; /* Fine-tune spacing */
     }
 }
 
-/* Adjust spacing between sections */
-.hero {
-    margin-bottom: 0; /* Remove bottom margin to prevent gaps */
-}
 
-.store {
-    padding-top: 20px; /* Add padding to maintain separation without large gaps */
-}
 
 
