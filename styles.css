@@ -325,6 +325,12 @@ footer {
     z-index: 1100;
 }
 
+
+
+
+
+
+
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
     .hamburger-menu {
@@ -352,3 +358,56 @@ footer {
         padding: 10px 0;
     }
 }
+
+
+
+/* Default Navbar Behavior */
+.nav-links {
+    display: flex; /* Keep flex layout for larger screens */
+    gap: 40px;
+    list-style: none;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    /* Hide the nav-links in the navbar */
+    .nav-links {
+        display: none; /* Hidden by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position the links below the navbar */
+        right: 0;
+        width: 100%; /* Full-width dropdown */
+        background: #5A7D9A; /* Match navbar background */
+        z-index: 1000;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Show nav-links when hamburger menu is active */
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    /* Adjust spacing between nav items */
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    /* Ensure the hamburger menu displays properly */
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu */
+    }
+
+    /* Hide the navbar icons for mobile if needed */
+    .navbar-icons {
+        display: none;
+    }
+    .hero {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .store {
+        margin-top: 0;
+        padding-top: 0;
