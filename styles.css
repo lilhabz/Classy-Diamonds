@@ -315,18 +315,6 @@ footer {
 
 
 
-/* Hamburger Menu for Small Screens */
-.hamburger-menu {
-    display: none; /* Hidden by default for larger screens */
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: white;
-    position: relative;
-    z-index: 1100;
-}
-
-
-
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
     /* Navbar Adjustments */
@@ -369,17 +357,19 @@ footer {
 
     .slide img {
         width: 100%; /* Full width for all images */
-        height: 60vh; /* Consistent height for seamless slides */
-        object-fit: cover; /* Maintain aspect ratio while filling the space */
+        height: 100%; /* Adjust height dynamically */
+        object-fit: cover; /* Ensure images maintain aspect ratio */
     }
 
     .slideshow {
         display: flex;
         transition: transform 1s ease-in-out;
+        height: 100%; /* Ensure the slideshow matches image height */
     }
 
     .slide {
         min-width: 100%; /* Each slide takes full width */
+        height: 60vh; /* Consistent slide height for landscape and portrait */
     }
 
     /* Store Section Adjustments */
@@ -388,6 +378,11 @@ footer {
         padding-top: 10px; /* Fine-tune spacing */
     }
 }
+
+
+
+
+
 
 
 
