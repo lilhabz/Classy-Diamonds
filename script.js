@@ -68,3 +68,13 @@ function updateCartCount() {
         }
     }
 }
+
+
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle menu visibility on click
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+

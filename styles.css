@@ -1,8 +1,3 @@
-@media (max-width: 768px) { 
-    .product-grid {
-        flex-direction: column;
-    }
-}
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -316,4 +311,44 @@ footer {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
+}
+
+
+
+/* Hamburger Menu for Small Screens */
+.hamburger-menu {
+    display: none; /* Hidden by default for larger screens */
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+    z-index: 1100;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu */
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #5A7D9A;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
 }
