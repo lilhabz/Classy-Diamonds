@@ -44,11 +44,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px; /* Increased padding */
+    padding: 20px 30px;
     background: #5A7D9A;
     color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-size: 1.2rem; /* Increased font size for navbar */
+    font-size: 1.2rem;
 }
 
 .navbar .logo img {
@@ -64,7 +64,7 @@ button:hover {
 
 .nav-links a {
     color: white;
-    font-size: 1.5rem; /* Increased font size for links */
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
@@ -77,7 +77,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
 }
 
 .navbar-icons .icon {
@@ -99,8 +99,8 @@ button:hover {
     right: -10px;
     background-color: navy;
     color: white;
-    font-size: 14px; /* Increased font size */
-    padding: 5px 10px; /* Added padding */
+    font-size: 14px;
+    padding: 5px 10px;
     border-radius: 50%;
     font-weight: bold;
 }
@@ -108,25 +108,30 @@ button:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh;
+    height: 92vh; /* Full screen for large screens */
+    width: 100%;
     overflow: hidden;
 }
 
 .slideshow {
     display: flex;
     transition: transform 1s ease-in-out;
+    height: 100%;
+    width: 100%;
 }
 
 .slide {
     min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center -20px;
-    
+    object-fit: cover; /* Ensure the entire container is filled edge-to-edge */
 }
 
 /* Store Section */
@@ -139,7 +144,7 @@ button:hover {
 }
 
 .store h2 {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -171,13 +176,13 @@ button:hover {
 }
 
 .product-item h3 {
-    font-size: 1.5rem; /* Increased product name font size */
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .product-item p {
-    font-size: 1.1rem; /* Increased price font size */
+    font-size: 1.1rem;
     color: #777;
     margin-bottom: 15px;
 }
@@ -219,11 +224,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #f7f7f7;
 }
 
 .custom-home h2 {
-    font-size: 2.5rem; /* Increased heading font size */
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -232,7 +236,6 @@ button:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    width: 100%;
 }
 
 .custom-item {
@@ -256,21 +259,22 @@ button:hover {
 }
 
 .custom-item h3 {
-    font-size: 1.5rem; /* Increased product name size */
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .custom-item p {
-    font-size: 1.1rem; /* Increased description size */
+    font-size: 1.1rem;
     color: #777;
     margin-bottom: 15px;
 }
 
 .custom-creation {
+    padding: 20px;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    width: 100%;
 }
 
 .custom-creation button {
@@ -279,61 +283,89 @@ button:hover {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .custom-creation button:hover {
     background: #85b6df;
     color: #000;
+    transform: scale(1.05);
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .client-care-container {
-    display: flex;   
-    gap: 40px;
-    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .client-care h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffd700; /* Gold heading */
 }
 
 .client-care ul {
     list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
 .client-care ul li {
-    margin: 10px 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.client-care ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.client-care ul li a:hover {
+    color: #ffd700; /* Gold on hover */
+    text-decoration: underline;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444; /* Subtle top border */
+    padding-top: 20px;
+    margin-top: 10px;
+    color: #ccc; /* Lighter text color */
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 
 
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
-    /* Navbar Adjustments */
     .hamburger-menu {
-        display: block; /* Show hamburger menu */
+        display: block;
         margin-right: 20px;
     }
 
     .nav-links {
-        display: none; /* Hide navigation links by default */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Position below the navbar */
+        top: 100%;
         right: 0;
-        width: 100%; /* Full-width dropdown */
+        width: 100%;
         background: #5A7D9A;
         z-index: 1000;
         padding: 20px 0;
@@ -341,7 +373,7 @@ footer {
     }
 
     .nav-links.active {
-        display: flex; /* Show links when active */
+        display: flex;
     }
 
     .nav-links li {
@@ -350,42 +382,58 @@ footer {
     }
 
     .navbar-icons {
-        display: none; /* Hide navbar icons for mobile */
+        display: none;
     }
 
-    /* Hero Section Adjustments */
+    /* Hero Section */
     .hero {
-        height: auto; /* Allow flexible height */
-        margin-bottom: 0; /* Remove extra bottom margin */
+        height: 60vh; /* Adjusted for medium screens */
     }
-    .slide {
-        min-width: 100%; /* Full width for each slide */
-        height: auto; /* Allow flexible height */
-        max-height: 50vh; /* Limit height to half the viewport */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .slide img {
-        width: 100%; /* Scale image to full width */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: contain; /* Prevent distortion while scaling */
-        max-height: 50vh; /* Limit the height to avoid oversizing */
+        object-fit: cover; /* Edge-to-edge coverage */
+        width: 100%;
+        height: 100%;
     }
-    
-
-    .slideshow {
-        display: flex;
-        transition: transform 1s ease-in-out;
-        height: 100%; /* Ensure the slideshow matches image height */
+    footer {
+        padding: 30px 10px;
     }
 
-    
+    .client-care h3 {
+        font-size: 1.3rem;
+    }
 
-    /* Store Section Adjustments */
-    .store {
-        margin-top: 0; /* Remove unnecessary margin above */
-        padding-top: 10px; /* Fine-tune spacing */
+    .client-care ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh; /* Adjusted for small screens */
+    }
+
+    .slide img {
+        object-fit: cover; /* Edge-to-edge coverage */
+        width: 100%;
+        height: 100%;
+    }
+    footer {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .client-care h3 {
+        font-size: 1.2rem; /* Slightly smaller heading */
+    }
+
+    .client-care ul li {
+        font-size: 0.85rem; /* Smaller text for links */
+        margin-bottom: 8px; /* Reduced spacing between list items */
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Smaller copyright text */
+        padding-top: 15px; /* Reduced padding above copyright */
     }
 }
 
