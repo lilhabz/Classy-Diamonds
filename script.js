@@ -1,23 +1,28 @@
 // Slideshow Logic
 const slideshow = document.getElementById('slideshow');
 const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
 
-function updateSlidePosition() {
-    const offset = -currentIndex * 100;
-    slideshow.style.transform = `translateX(${offset}%)`;
-}
+if (slideshow && slides.length > 0) {
+    let currentIndex = 0;
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
+    function updateSlidePosition() {
+        const offset = -currentIndex * 100;
+        slideshow.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlidePosition();
+    }
+
+    // Ensure the slideshow starts
+    setInterval(nextSlide, 5000);
+
+    // Initialize the first slide position
     updateSlidePosition();
+} else {
+    console.log("Slideshow not found on this page.");
 }
-
-// Ensure the slideshow starts
-setInterval(nextSlide, 5000);
-
-// Initialize the first slide position
-updateSlidePosition();
 
 // Cart Functionality
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -69,19 +74,15 @@ function updateCartCount() {
     }
 }
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
 
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
+// Toggle menu visibility on click
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
-    // Toggle menu visibility on click
-    hamburgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-
-
-
-    const images = document.querySelectorAll('.view-image');
+const images = document.querySelectorAll('.view-image');
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const closeLightbox = document.querySelector('.lightbox-close');
@@ -129,4 +130,23 @@ lightbox.addEventListener('click', (e) => {
     }
 });
 
+function updateCartCount() {
+    console.log("Running updateCartCount...");
 
+    const cartCount = document.querySelector('.cart-count');
+    console.log("Cart count element found:", cartCount);
+
+    if (cartCount) {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        console.log("Cart contents:", cart);
+
+        if (cart.length > 0) {
+            cartCount.style.display = 'inline-block';
+            cartCount.textContent = cart.length;
+        } else {
+            cartCount.style.display = 'none';
+        }
+    } else {
+        console.warn("Cart count element not found.");
+    }
+}

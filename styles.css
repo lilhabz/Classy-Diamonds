@@ -364,7 +364,7 @@ footer {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
-        margin-right: 20px;
+        margin-right: 100px;
     }
 
     .nav-links {
