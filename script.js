@@ -78,3 +78,55 @@ function updateCartCount() {
         navLinks.classList.toggle('active');
     });
 
+
+
+
+    const images = document.querySelectorAll('.view-image');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const closeLightbox = document.querySelector('.lightbox-close');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentImageIndex = 0;
+
+// Open Lightbox
+images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.style.display = 'flex'; // Show the lightbox
+    });
+});
+
+// Close Lightbox
+closeLightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none'; // Hide the lightbox
+});
+
+// Navigate to Previous Image
+prevButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateLightboxImage();
+});
+
+// Navigate to Next Image
+nextButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateLightboxImage();
+});
+
+// Update Lightbox Image
+function updateLightboxImage() {
+    lightboxImage.src = images[currentImageIndex].src;
+    lightboxImage.alt = images[currentImageIndex].alt;
+}
+
+// Close Lightbox When Clicking Outside the Image
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
+
+
