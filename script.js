@@ -150,3 +150,4 @@ function updateCartCount() {
         console.warn("Cart count element not found.");
     }
 }
+
