@@ -37,6 +37,8 @@ button:hover {
     display: none;
     cursor: pointer;
     padding: 10px;
+    position: relative; /* Allow precise positioning */
+    left: -10px; /* Move it closer to the logo */
 }
 
 .navbar {
@@ -368,7 +370,7 @@ footer {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
-        margin-right: 100px;
+        margin-right: 10px;
     }
 
     .nav-links {
