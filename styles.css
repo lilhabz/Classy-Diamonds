@@ -364,7 +364,44 @@ footer {
     margin: 0;
 }
 
+/*======================================================ABOUT =================================================*/
 
+.about-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start;
+    gap: 20px; /* Add space between elements */
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Arrange the image and text side by side */
+    align-items: flex-start;
+    gap: 20px; /* Add space between the image and text */
+}
+
+.about-image img {
+    width: 300px; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the space */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.about-text {
+    flex: 1; /* Allow the text section to take up remaining space */
+}
+
+.about-text h2 {
+    text-align: center; 
+
+.map iframe {
+    width: 100%; /* Make map responsive */
+    max-width: 400px; /* Limit the maximum width of the map */
+    height: 250px;
+    border: 0;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
 
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
