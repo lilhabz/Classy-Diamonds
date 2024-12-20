@@ -366,42 +366,97 @@ footer {
 
 /*======================================================ABOUT =================================================*/
 
+/* About Section Styling */
 .about-section {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 20px; /* Add space between elements */
+    gap: 20px;
     padding: 20px;
 }
 
 .about-content {
     display: flex;
-    flex-direction: row; /* Arrange the image and text side by side */
+    flex-direction: row;
     align-items: flex-start;
-    gap: 20px; /* Add space between the image and text */
+    gap: 20px;
 }
 
 .about-image img {
-    width: 300px; /* Adjust width of the image */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure image covers the space */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 300px; /* Image width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
 }
 
 .about-text {
-    flex: 1; /* Allow the text section to take up remaining space */
+    flex: 1; /* Allow text to take remaining space */
 }
 
 .about-text h2 {
-    text-align: center; 
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 20px; /* Add space below paragraph */
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Add space above icons */
+}
+
+.contact-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Icon size */
+    height: 50px;
+    border-radius: 50%; /* Circular icons */
+    font-size: 1.8rem; /* Adjust font size */
+    color: white;
+    text-decoration: none;
+    background-color: #5A7D9A; /* Default color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Instagram Icon Specific Styling */
+.contact-icons .icon-instagram {
+    background-color: #E4405F; /* Instagram brand color */
+}
+
+.contact-icons .icon-instagram:hover {
+    background-color: #C13584; /* Darker hover color for Instagram */
+}
+
+/* Phone Icon Specific Styling */
+.contact-icons .icon-phone {
+    background-color: #25D366; /* Green for phone icon */
+}
+
+.contact-icons .icon-phone:hover {
+    background-color: #128C7E; /* Darker green hover color */
+}
+
+/* Map Styling */
 .map iframe {
-    width: 100%; /* Make map responsive */
-    max-width: 400px; /* Limit the maximum width of the map */
+    width: 100%;
+    max-width: 600px; /* Adjust width for responsiveness */
     height: 250px;
     border: 0;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 10px;
 }
+
+
 
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
