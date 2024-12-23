@@ -6,9 +6,6 @@
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: #F5F5F5;
 }
 
@@ -37,8 +34,8 @@ button:hover {
     display: none;
     cursor: pointer;
     padding: 10px;
-    position: relative; /* Allow precise positioning */
-    left: -10px; /* Move it closer to the logo */
+    position: relative;
+    z-index: 1000;
 }
 
 .navbar {
@@ -54,9 +51,10 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 1.2rem;
 }
+
 .navbar .logo {
-    position: relative; /* Allow position adjustments */
-    left: -25px; /* Move logo further to the left */
+    position: relative;
+    left: -25px;
 }
 
 .navbar .logo img {
@@ -81,12 +79,6 @@ button:hover {
     color: black;
 }
 
-button:focus, a:focus {
-    outline: 2px solid #ffd700; /* Gold focus outline */
-    outline-offset: 2px;
-}
-
-/* Icons Container */
 .navbar-icons {
     display: flex;
     align-items: center;
@@ -106,7 +98,6 @@ button:focus, a:focus {
     color: black;
 }
 
-/* Cart Item Count Badge */
 .cart-count {
     position: absolute;
     top: -10px;
@@ -122,7 +113,7 @@ button:focus, a:focus {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 92vh; /* Full screen for large screens */
+    height: 92vh;
     width: 100%;
     overflow: hidden;
 }
@@ -145,7 +136,7 @@ button:focus, a:focus {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the entire container is filled edge-to-edge */
+    object-fit: cover;
 }
 
 /* Store Section */
@@ -766,6 +757,113 @@ footer {
         margin-bottom: 15px; /* Add smaller spacing below icons */
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu for larger tablets and Surface Pro */
+    }
+
+    .navbar {
+        padding: 20px 30px; /* Add slightly more padding for larger screens */
+        justify-content: space-between; /* Maintain proper alignment */
+    }
+
+    .nav-links {
+        display: flex; /* Show links horizontally */
+        flex-direction: row; /* Align links in a row */
+        gap: 25px; /* Reduce gap slightly for better layout */
+        justify-content: center; /* Center align links */
+    }
+
+    .nav-links a {
+        font-size: 1.4rem; /* Slightly larger font for better readability */
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease, background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        background: #85b6df; /* Add hover effect */
+        color: black;
+    }
+
+    .navbar-icons {
+        gap: 20px; /* Add more spacing between icons */
+        font-size: 1.4rem; /* Adjust icon size for larger screens */
+    }
+
+    .hero {
+        height: 80vh; /* Slightly taller hero section for better visual impact */
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for Surface Pro screens */
+        gap: 20px; /* Adjust gap for spacing */
+        justify-items: center;
+    }
+
+    .product-item {
+        width: 30%; /* Adjust product width for better fit */
+    }
+
+    .custom-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px; /* Spacing between custom items */
+    }
+
+    .custom-item {
+        width: 30%; /* Adjust width for consistent spacing */
+    }
+
+    footer {
+        padding: 40px 20px; /* Increase footer padding */
+        font-size: 1rem; /* Slightly larger footer text */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-care h3 {
+        font-size: 1.5rem; /* Increase font size */
+    }
+
+    .client-care ul li {
+        font-size: 1rem; /* Adjust link font size for better readability */
+    }
+
+    .map iframe {
+        width: 80%; /* Reduce map size for better fit */
+        height: 450px; /* Adjust map height */
+        margin: 0 auto; /* Center map */
+    }
+
+    .about-image img {
+        width: 80%; /* Reduce image width for better layout */
+        max-width: 700px; /* Limit max width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center align content */
+        gap: 25px; /* Add spacing between elements */
+        padding: 0 30px; /* Add more padding for better spacing */
+    }
+
+    .about-text {
+        text-align: center; /* Center-align text */
+        font-size: 1.1rem; /* Slightly larger font for readability */
+    }
+
+    .contact-icons {
+        gap: 25px; /* Space out icons slightly */
+        margin-bottom: 20px; /* Add margin below icons */
+        justify-content: center;
+    }
+}
+
 
 
 /* Lightbox Overlay */
