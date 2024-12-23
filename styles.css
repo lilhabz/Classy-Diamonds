@@ -56,7 +56,7 @@ button:hover {
 }
 .navbar .logo {
     position: relative; /* Allow position adjustments */
-    left: -10px; /* Move logo further to the left */
+    left: -25px; /* Move logo further to the left */
 }
 
 .navbar .logo img {
@@ -410,7 +410,6 @@ footer {
     display: flex;
     gap: 15px; /* Space between icons */
     margin-top: 10px; /* Add space above icons */
-    justify-content: center;
 }
 
 .contact-icons a {
@@ -480,106 +479,10 @@ footer {
 
 
 /* Responsive Styles for Smaller Screens--------------------------------------------------------------------------- */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .hamburger-menu {
-        display: none; /* Hide hamburger menu on larger screens */
-    }
-
-    .navbar .logo {        
-        position: relative; /* Ensure positioning adjusts properly */
-        left: -10px; /* Reset any left offset */
-    }
-
-    .navbar {
-        padding: 15px 20px; /* Adjust navbar spacing */
-        width: 100%; /* Ensure it spans the full width of the viewport */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        justify-content: space-between; /* Maintain proper spacing */
-    }
-
-    .nav-links {
-        gap: 30px; /* Adjust spacing between links */
-        flex-wrap: nowrap; /* Prevent wrapping unless necessary */
-        justify-content: center; /* Center align links */
-    }
-
-    .nav-links a {
-        font-size: 1.3rem; /* Slightly smaller font for links */
-    }
-
-    .navbar-icons {
-        gap: 10px; /* Reduce space between icons */
-        font-size: 1.3rem; /* Adjust icon size */
-        margin-right: 0; /* Remove excess right margin */        
-    }
-
-    .hero {
-        height: 75vh; /* Reduce hero height */
-    }
-
-    .product-item {
-        width: 220px; /* Adjust product item size */
-    }
-
-    .custom-item {
-        width: 220px; /* Adjust custom item size */
-    }
-
-    .about-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center content */
-        gap: 25px; /* Add space between elements */
-    }
-
-    .about-image img {
-        width: 90%; /* Make ABOUT1.jpg responsive */
-        max-width: 700px; /* Limit max width */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .map iframe {
-        width: 90%; /* Adjust map width */
-        height: 400px; /* Adjust height for medium screens */
-        margin: 0 auto; /* Center map */
-    }
-
-    .map-and-image .about-image img {
-        height: auto; /* Maintain aspect ratio for about2.jpeg */
-        max-width: 90%; /* Ensure responsiveness */
-        margin: 0 auto; /* Center about2.jpeg */
-    }
-
-    .contact-icons {
-        gap: 20px; /* Space out icons slightly */
-        margin-bottom: 20px; /* Add margin below icons */
-        justify-content: center;
-    }
-
-    .about-text {
-        text-align: center; /* Center-align text */
-        padding: 0 20px; /* Add padding */
-        font-size: 1rem; /* Adjust font size */
-    }
-
-    footer {
-        padding: 25px 15px; /* Reduce footer padding */
-        font-size: 0.9rem; /* Adjust font size */
-    }
-
-    .footer-bottom {
-        font-size: 0.8rem; /* Adjust copyright text size */
-    }
-}
-
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
         margin-right: 10px;
-    }
-    .navbar {
-        padding: 10px 15px; /* Reduce padding for smaller screens */
-        width: 100%; /* Ensure it fits within the viewport */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .nav-links {
@@ -593,9 +496,6 @@ footer {
         z-index: 1000;
         padding: 20px 0;
         text-align: center;
-        flex-wrap: wrap; /* Allow links to wrap if they overflow */
-        gap: 20px; /* Reduce gap between links for smaller screens */
-        justify-content: center; /* Center align links */
     }
 
     .nav-links.active {
@@ -609,7 +509,7 @@ footer {
 
     .navbar .logo {
         position: relative; /* Allow adjustments */
-        left: -10px; /* Reset logo position for alignment */
+        left: -20px; /* Reset logo position for alignment */
     }
 
     /* Navbar Icons for Small Screens */
@@ -618,7 +518,6 @@ footer {
         justify-content: flex-end; /* Align them to the right */
         gap: 15px; /* Add spacing between icons */
         font-size: 1.2rem; /* Slightly smaller icon size */
-        margin-right: 0; /* Remove any excess margin on smaller screens */
     }
 
     .navbar-icons .icon {
@@ -735,12 +634,6 @@ footer {
         display: block; /* Show hamburger menu */
         margin-right: 10px;
     }
-    
-    .navbar {
-        padding: 10px 10px; /* Further reduce padding for very small screens */
-        width: 100%; /* Ensure it fits within the viewport */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
 
     .nav-links {
         display: none; /* Hide navigation links by default */
@@ -753,14 +646,11 @@ footer {
         z-index: 1000;
         padding: 15px 0;
         text-align: center;
-        gap: 15px; /* Smaller gap for extra-small screens */
-        justify-content: center; /* Center align links */
-        flex-wrap: wrap; /* Allow links to wrap */
     }
 
     .navbar .logo {
         position: relative; /* Allow adjustments */
-        left: -10px; /* Reset logo position for alignment */
+        left: -20px; /* Reset logo position for alignment */
     }
 
     .navbar-icons {
@@ -768,8 +658,6 @@ footer {
         justify-content: space-between; /* Spread icons evenly */
         gap: 10px; /* Smaller spacing */
         font-size: 1rem; /* Smaller icon size */
-        margin-right: 0; /* Remove excess margin */
-        gap: 10px; /* Reduce spacing between icons */
     }
 
     .navbar-icons .icon {
