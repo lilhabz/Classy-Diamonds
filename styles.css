@@ -383,8 +383,8 @@ footer {
 }
 
 .about-image img {
-    width: 300px; /* Image width */
-    height: 300px;
+    width: 750px; /* Image width */
+    height: auto;
     object-fit: cover;
     border-radius: 10px; /* Rounded corners */
 }
@@ -400,8 +400,9 @@ footer {
 }
 
 .about-text p {
-    line-height: 1.6;
+    line-height: 2;
     margin-bottom: 20px; /* Add space below paragraph */
+    font-size: 24px;
 }
 
 /* Contact Icons Styling */
@@ -448,13 +449,32 @@ footer {
 }
 
 /* Map Styling */
+/* Map and About2 Image Styling */
+.map-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .map iframe {
-    width: 100%;
-    max-width: 600px; /* Adjust width for responsiveness */
-    height: 250px;
+    width: 750px;
+    max-width: 100%; /* Ensure responsiveness */
+    height: 500px;
     border: 0;
     border-radius: 10px;
+    flex-shrink: 0;
 }
+
+.map-and-image .about-image img {
+    flex-grow: 1;
+    width: auto; /* Size of about2.jpg */
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 
@@ -560,6 +580,28 @@ footer {
     .footer-bottom {
         text-align: center;
     }
+    .map-and-image {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center alignment */
+        gap: 15px; /* Adjust gap */
+    }
+
+    .map iframe {
+        width: 100%; /* Full width map */
+        height: 400px; /* Reduced height for medium screens */
+    }
+
+    .map-and-image .about-image img {
+        width: 80%; /* Adjust image size */
+        height: auto; /* Maintain aspect ratio */
+        flex-grow: 0;
+    }
+    .about-image img {
+        width: 100%; /* Full width for ABOUT1.jpg */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+
 }
 
 @media (max-width: 480px) {
@@ -649,6 +691,27 @@ footer {
         font-size: 0.8rem; /* Smaller copyright text */
         padding-top: 15px; /* Reduced padding above copyright */
         text-align: center;
+    }
+    .map-and-image {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center alignment */
+        gap: 10px; /* Smaller gap */
+    }
+
+    .map iframe {
+        width: 100%; /* Full width map */
+        height: 300px; /* Reduced height for small screens */
+    }
+
+    .map-and-image .about-image img {
+        width: 90%; /* Smaller width for image */
+        height: auto; /* Maintain aspect ratio */
+        flex-grow: 0;
+        
+    }
+    .about-image img {
+        width: 100%; /* Full width for ABOUT1.jpg */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
