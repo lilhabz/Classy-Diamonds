@@ -410,6 +410,7 @@ footer {
     display: flex;
     gap: 15px; /* Space between icons */
     margin-top: 10px; /* Add space above icons */
+    justify-content: center;
 }
 
 .contact-icons a {
@@ -551,6 +552,7 @@ footer {
     .contact-icons {
         gap: 20px; /* Space out icons slightly */
         margin-bottom: 20px; /* Add margin below icons */
+        justify-content: center;
     }
 
     .about-text {
