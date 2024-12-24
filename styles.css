@@ -7,6 +7,7 @@
 
 body, html {
     background-color: #F5F5F5;
+    overflow-x: hidden; /* Ensure no horizontal scrolling */
 }
 
 a {
@@ -474,6 +475,35 @@ footer {
     .hamburger-menu {
         display: block;
         margin-right: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between; /* Align items across the navbar */
+        align-items: center;
+    }
+
+    .logo {
+        flex: 1; /* Allow the logo to take up available space */
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-icons {
+        display: flex; /* Make icons visible */
+        flex-direction: row; /* Align icons horizontally */
+        gap: 10px; /* Add spacing between icons */
+        justify-content: flex-end; /* Align them to the right */
+        align-items: center; /* Ensure icons align vertically */
+        font-size: 1.2rem; /* Slightly smaller icon size */
+    }
+
+    .navbar-icons .icon {
+        color: white; /* Match navbar text color */
+        text-decoration: none; /* Ensure no underline on icons */
     }
 
     .nav-links {
@@ -485,7 +515,7 @@ footer {
         width: 100%;
         background: #5A7D9A;
         z-index: 1000;
-        padding: 20px 0;
+        padding: 10px 0;
         text-align: center;
     }
 
@@ -496,27 +526,9 @@ footer {
     .nav-links li {
         text-align: center;
         padding: 10px 0;
+        font-size: 1.2rem; /* Scale down font size */
     }
 
-    .navbar .logo {
-        position: relative; /* Allow adjustments */
-        left: -20px; /* Reset logo position for alignment */
-    }
-
-    /* Navbar Icons for Small Screens */
-    .navbar-icons {
-        display: flex; /* Make icons visible */
-        justify-content: flex-end; /* Align them to the right */
-        gap: 15px; /* Add spacing between icons */
-        font-size: 1.2rem; /* Slightly smaller icon size */
-    }
-
-    .navbar-icons .icon {
-        color: white; /* Match navbar text color */
-        text-decoration: none; /* Ensure no underline on icons */
-    }
-
-    /* Hero Section */
     .hero {
         height: 60vh; /* Adjusted for medium screens */
     }
@@ -532,6 +544,7 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         gap: 15px; /* Spacing between items */
         justify-items: center; /* Center items */
+        width: 45%;
     }
 
     .product-item {
@@ -543,6 +556,7 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         gap: 15px; /* Spacing between items */
         justify-items: center; /* Center items */
+        width: 45%;
     }
 
     .custom-item {
@@ -550,7 +564,7 @@ footer {
     }
 
     footer {
-        padding: 30px 10px;
+        padding: 20px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -581,8 +595,8 @@ footer {
 
     .map iframe {
         width: 100%; /* Full width map */
-        max-width: 90%; /* Ensure it doesn’t stretch too wide */
-        height: 400px; /* Adjust height for medium screens */
+        max-width: 95%; /* Ensure it doesn’t stretch too wide */
+        height: 300px; /* Adjust height for medium screens */
         margin: 0 auto; /* Center map */
     }
 
@@ -620,10 +634,17 @@ footer {
     }
 }
 
+
+
+
 @media (max-width: 480px) {
     .hamburger-menu {
         display: block; /* Show hamburger menu */
         margin-right: 10px;
+    }
+    .navbar {
+        flex-direction: column; /* Stack navbar items */
+        padding: 10px;
     }
 
     .nav-links {
@@ -635,8 +656,11 @@ footer {
         width: 100%;
         background: #5A7D9A;
         z-index: 1000;
-        padding: 15px 0;
+        padding: 5px 0;
         text-align: center;
+    }
+    .nav-links li {
+        font-size: 1rem; /* Smaller font size */
     }
 
     .navbar .logo {
@@ -668,25 +692,25 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-columns: repeat 1fr; /* 2 columns for smaller screens */
         gap: 10px; /* Smaller spacing */
     }
 
     .product-item {
-        width: 100%; /* Full width for extra-small screens */
+        width: 90%; /* Full width for extra-small screens */
     }
 
     .custom-grid {
-        grid-template-columns: repeat(2, 1fr); /* Maintain 2 columns */
+        grid-template-columns: repeat 1fr; /* Maintain 2 columns */
         gap: 10px; /* Smaller spacing */
     }
 
     .custom-item {
-        width: 100%; /* Full width for very small screens */
+        width: 90%; /* Full width for very small screens */
     }
 
     footer {
-        padding: 20px 10px; /* Reduce padding for smaller screens */
+        padding: 15px 5px; /* Reduce padding for smaller screens */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -720,8 +744,8 @@ footer {
 
     .map iframe {
         width: 100%; /* Full width map */
-        max-width: 90%; /* Ensure it doesn’t stretch too wide */
-        height: 300px; /* Adjust height for smaller screens */
+        max-width: 100%; /* Ensure it doesn’t stretch too wide */
+        height: 250px; /* Adjust height for smaller screens */
         margin: 0 auto; /* Center map */
     }
 
@@ -887,11 +911,12 @@ footer {
 }
 
 .lightbox img {
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 70%;
+    max-height: 70%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease-in-out;
+    object-fit: contain; /* Ensure the full photo is displayed */
 }
 
 /* Lightbox Close Button */
@@ -904,6 +929,7 @@ footer {
     color: white;
     cursor: pointer;
     transition: color 0.3s ease;
+    z-index: 1000; /* Ensure buttons are above the image */
 }
 
 .lightbox-close:hover {
@@ -913,11 +939,13 @@ footer {
 /* Lightbox Controls (Previous/Next) */
 .lightbox-controls {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    align-items: center;
+    padding: 0 20px;
+    transform: translateY(-50%);
 }
 
 .lightbox-controls button {
@@ -928,6 +956,7 @@ footer {
     font-size: 1.5rem;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1000; /* Ensure buttons are above the image */
 }
 
 .lightbox-controls button:hover {
