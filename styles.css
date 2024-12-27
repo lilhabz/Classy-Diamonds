@@ -473,7 +473,7 @@ footer {
 /* Responsive Styles for Smaller Screens--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: block;        
+        display: block;
         font-size: 1.5rem;
         cursor: pointer;
         position: absolute;
@@ -493,6 +493,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        padding-left: 20px;
     }
 
     .navbar-icons {
@@ -591,8 +592,9 @@ footer {
     }
 
     .map-and-image {
+        display: flex; /* Enable flexbox */
         flex-direction: column; /* Stack vertically */
-        align-items: center; /* Center alignment */
+        align-items: center; /* Center elements horizontally */
         gap: 15px; /* Adjust gap */
     }
 
@@ -603,20 +605,40 @@ footer {
         margin: 0 auto; /* Center map */
     }
 
+    .map-and-image .about-image {
+        display: flex; /* Enable flexbox */
+        justify-content: center; /* Center-align the image horizontally */
+        align-items: center; /* Center-align the image vertically (if needed) */
+        width: 100%; /* Ensure full width for the container */
+        max-width: 90%; /* Prevent it from stretching too wide */
+    }
+
     .map-and-image .about-image img {
         width: 100%; /* Full width for smaller screens */
         max-width: 90%; /* Ensure it doesn’t stretch too wide */
         height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center image */
+        display: block; /* Ensure no inline spacing around the image */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-image {
+        display: flex; /* Enable flexbox */
+        justify-content: center; /* Center-align the image horizontally */
+        align-items: center; /* Center-align the image vertically */
+        width: 100%; /* Full width */
+        max-width: 90%; /* Prevent it from stretching too wide */
     }
 
     .about-image img {
         width: 100%; /* Full width for ABOUT1.jpg */
         height: auto; /* Maintain aspect ratio */
-        max-width: 90%;
+        max-width: 90%; /* Prevent overstretching */
+        margin: 0 auto; /* Center the image */
+        display: block; /* Remove inline spacing issues */
     }
 
     .about-content {
+        display: flex; /* Enable flexbox */
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center-align content */
         gap: 20px; /* Add spacing between elements */
@@ -636,6 +658,7 @@ footer {
         margin-bottom: 20px; /* Add spacing below icons */
     }
 }
+
 
 @media (max-width: 480px) {
     .navbar {
@@ -705,21 +728,52 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: repeat 1fr; /* Single column for smaller screens */
-        gap: 10px; /* Smaller spacing */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 25px; /* Increased spacing for a better layout */
+        padding: 0 20px; /* Add side padding for better spacing */
     }
 
     .product-item {
-        width: 90%; /* Full width for extra-small screens */
+        width: 100%; /* Ensure full width for larger items */
+        max-width: 350px; /* Set a max width for larger items */
+        margin: 0 auto; /* Center the item */
+        text-align: center; /* Ensure content is centered */
+    }
+
+    .product-item img {
+        width: 100%; /* Full width of the container */
+        max-width: 300px; /* Ensure the image size is proportionate */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .product-item h3 {
+        font-size: 1.2rem; /* Increase font size for product names */
+        margin-bottom: 5px; /* Add spacing below the title */
+    }
+
+    .product-item p {
+        font-size: 1.1rem; /* Slightly larger price font */
+        margin-bottom: 10px; /* Add spacing below the price */
+    }
+
+    .product-item button {
+        padding: 10px 20px; /* Increase button size */
+        font-size: 1rem; /* Make the button text slightly larger */
     }
 
     .custom-grid {
-        grid-template-columns: repeat 1fr; /* Maintain layout */
-        gap: 10px; /* Smaller spacing */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px; /* Increased spacing for a better layout */
+        padding: 0 20px; /* Add side padding for better spacing */
     }
 
     .custom-item {
-        width: 90%; /* Full width for very small screens */
+        width: 100%; /* Ensure full width for larger items */
+        max-width: 350px; /* Set a max width for larger items */
+        margin: 0 auto; /* Center the item */
     }
 
     footer {
@@ -810,6 +864,8 @@ footer {
         margin-bottom: 15px; /* Add smaller spacing below icons */
     }
 }
+
+
 
 @media (min-width: 1024px) and (max-width: 1536px) {
     .hamburger-menu {
