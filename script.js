@@ -82,3 +82,9 @@ lightbox.addEventListener('click', (e) => {
     }
 });
 
+// Open Email/
+function openEmail() {
+    const email = 'classyqned@yahoo.com';
+    const mailtoUrl = `mailto:${email}`;
+    window.open(mailtoUrl, '_blank');
+}
