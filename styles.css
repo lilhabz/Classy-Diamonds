@@ -646,29 +646,60 @@ footer {
     }
 
     .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 15px; /* Spacing between items */
-        justify-items: center; /* Center items */
-        width: 45%;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 columns */
+        gap: 15px !important; /* Spacing between items */
+        padding: 0 10px !important; /* Add side padding for better spacing */                      
     }
 
     .product-item {
-        width: 45%; /* Adjust the width for better spacing */
+        width: 100%; /* Adjust the width for better spacing */
+        text-align: center
+    }
+    .product-item img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space below images */
     }
 
+    .product-item h3 {
+        font-size: 1.2rem; /* Adjust title size */
+        margin-bottom: 5px;
+    }
+
+    .product-item p {
+        font-size: 1rem; /* Adjust price size */
+        margin-bottom: 10px;
+    }
+
+    .product-item button {
+        font-size: 0.9rem; /* Reduce button text size */
+        padding: 8px 12px; /* Smaller button */
+    }
+
+
     .custom-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 15px; /* Spacing between items */
-        justify-items: center; /* Center items */
-        width: 45%;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Two columns */
+        gap: 15px !important; /* Spacing between items */
+        padding: 0 10px !important; /* Add side padding */
     }
 
     .custom-item {
-        width: 45%; /* Adjust the width for spacing */
+        text-align: center !important; /* Center content */
     }
 
+    .custom-item img {
+        max-width: 100% !important; /* Make images responsive */
+        height: auto !important; /* Maintain aspect ratio */
+        margin-bottom: 10px !important; /* Add spacing below the image */
+    }
+
+    .custom-item p {
+        font-size: 1rem !important; /* Adjust text size */
+        margin-top: 5px !important; /* Add spacing above text */
+    }
+    
     footer {
         padding: 20px 10px;
         display: flex;
