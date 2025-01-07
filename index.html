@@ -1,166 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classy Diamonds</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
- <!-- Navbar -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="images/classyd1.png" alt="Classy Diamonds"></a>
-    </div>
-    <nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/classyd1.png" alt="Classy Diamonds"
+        /></a>
+      </div>
+      <nav>
         <ul class="nav-links">
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="custom.html">Custom</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-    </nav>
-    <div class="navbar-icons">
+      </nav>
+      <div class="navbar-icons">
         <div class="hamburger-menu">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </div>
         <a href="#search" class="icon"><i class="fas fa-search"></i></a>
         <a href="#account" class="icon"><i class="fas fa-user"></i></a>
         <a href="cart.html" class="icon">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count">0</span>
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
         </a>
-    </div>
-</header>
-
-    
+      </div>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="slideshow" id="slideshow">
-            <div class="slide">
-                <img src="images/hero_image_ring.png" alt="Ring" loading="lazy">
-            </div>
-            <div class="slide">
-                <img src="images/hero_image_diamonds.png" alt="Diamonds" loading="lazy">
-            </div>
-            <div class="slide">
-                <img src="images/hero_image_watch.png" alt="Watch" loading="lazy">
-            </div>
+      <div class="slideshow" id="slideshow">
+        <div class="slide">
+          <img src="images/hero_image_ring.png" alt="Ring" loading="lazy" />
         </div>
+        <div class="slide">
+          <img
+            src="images/hero_image_diamonds.png"
+            alt="Diamonds"
+            loading="lazy"
+          />
+        </div>
+        <div class="slide">
+          <img src="images/hero_image_watch.png" alt="Watch" loading="lazy" />
+        </div>
+      </div>
     </section>
     <!--Breadcrumb-->
     <nav class="breadcrumb">
-        <ul></ul>
+      <ul></ul>
     </nav>
     <section class="home-info">
-        <div class="info">
-          <h2 class="intro-text">
-            Experience the brilliance of custom creations with Classy Diamonds—where elegance meets innovation. Unveil your vision and indulge in timeless designs, crafted exclusively for you.
-          </h2>
-        </div>
-      </section>
-      
+      <div class="info">
+        <h2 class="intro-text">
+          Experience the brilliance of custom creations with Classy
+          Diamonds—where elegance meets innovation. Unveil your vision and
+          indulge in timeless designs, crafted exclusively for you.
+        </h2>
+      </div>
+    </section>
 
     <!-- Store Section -->
     <section id="shop" class="store">
-        <h2>Store</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="images/phring.jpeg" alt="Diamond Ring" loading="lazy">
-                <h3>Diamond Ring</h3>
-                <p>$1,200</p>
-                <button class="add-to-cart" data-id="1" data-name="Diamond Ring" data-price="1200">Add to Cart</button>
-            </div>
-            <div class="product-item">
-                <img src="images/phgoldnecklace.jpeg" alt="Gold Necklace" loading="lazy">
-                <h3>Gold Necklace</h3>
-                <p>$2,500</p>
-                <button class="add-to-cart" data-id="1" data-name="Gold Necklace" data-price="2500">Add to Cart</button>
-            </div>
-            <div class="product-item">
-                <img src="images/phsilvbrace.jpeg" alt="Silver Bracelet" loading="lazy">
-                <h3>Silver Bracelet</h3>
-                <p>$800</p>
-                <button class="add-to-cart" data-id="1" data-name="Silver Bracelet" data-price="800">Add to Cart</button>
-            </div>
-            <div class="product-item">
-                <img src="images/phpearl.jpeg" alt="Pearl Earrings" loading="lazy">
-                <h3>Pearl Earrings</h3>
-                <p>$1,000</p>
-                <button class="add-to-cart" data-id="1" data-name="Pearl Earrings" data-price="1000">Add to Cart</button>
-            </div>            
+      <h2>Store</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="images/phring.jpeg" alt="Diamond Ring" loading="lazy" />
+          <h3>Diamond Ring</h3>
+          <p>$1,200</p>
+          <button
+            class="add-to-cart"
+            data-id="1"
+            data-name="Diamond Ring"
+            data-price="1200"
+          >
+            Add to Cart
+          </button>
         </div>
-        <div class="view-more-product">
-            <a href="shop.html"><button href="shop.html">View more</button></a>
+        <div class="product-item">
+          <img
+            src="images/phgoldnecklace.jpeg"
+            alt="Gold Necklace"
+            loading="lazy"
+          />
+          <h3>Gold Necklace</h3>
+          <p>$2,500</p>
+          <button
+            class="add-to-cart"
+            data-id="1"
+            data-name="Gold Necklace"
+            data-price="2500"
+          >
+            Add to Cart
+          </button>
         </div>
+        <div class="product-item">
+          <img
+            src="images/phsilvbrace.jpeg"
+            alt="Silver Bracelet"
+            loading="lazy"
+          />
+          <h3>Silver Bracelet</h3>
+          <p>$800</p>
+          <button
+            class="add-to-cart"
+            data-id="1"
+            data-name="Silver Bracelet"
+            data-price="800"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="images/phpearl.jpeg" alt="Pearl Earrings" loading="lazy" />
+          <h3>Pearl Earrings</h3>
+          <p>$1,000</p>
+          <button
+            class="add-to-cart"
+            data-id="1"
+            data-name="Pearl Earrings"
+            data-price="1000"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="view-more-product">
+        <a href="shop.html"><button href="shop.html">View more</button></a>
+      </div>
     </section>
-    <hr>
+    <hr />
     <!-- Custom Home Section -->
     <section class="custom-home">
-        <h2>Custom Creations</h2>
-        <div class="custom-grid">
-            <div class="custom-item">
-                <img src="images/CUSTOM1.jpg" alt="Custom Ring" class="view-image" loading="lazy">                
-                <p>Customized for customer</p>
-            </div>
-            <div class="custom-item">
-                <img src="images/CUSTOM2.jpg" alt="Custom Ring" class="view-image" loading="lazy">                
-                <p>Customized for customer</p>
-            </div>
-            <div class="custom-item">
-                <img src="images/CUSTOM3.jpg" alt="Custom Bracelet" class="view-image" loading="lazy">                
-                <p>Customized for customer</p>
-            </div>
-            <div class="custom-item">
-                <img src="images/CUSTOM4.jpg" alt="Custom Bracelet" class="view-image" loading="lazy">                
-                <p>Customized for customer</p>
-            </div>
-            <div class="custom-item">
-                <img src="images/CUSTOM5.jpg" alt="Custom Bracelet" class="view-image" loading="lazy">                
-                <p>Customized for customer</p>
-            </div>
+      <h2>Custom Creations</h2>
+      <div class="custom-grid">
+        <div class="custom-item">
+          <img
+            src="images/CUSTOM1.jpg"
+            alt="Custom Ring"
+            class="view-image"
+            loading="lazy"
+          />
+          <p>Customized for customer</p>
         </div>
-        <div class="custom-creation">
-            <a href="contact.html"><button href="contact.html">Contact to Design</button></a>
+        <div class="custom-item">
+          <img
+            src="images/CUSTOM2.jpg"
+            alt="Custom Ring"
+            class="view-image"
+            loading="lazy"
+          />
+          <p>Customized for customer</p>
         </div>
+        <div class="custom-item">
+          <img
+            src="images/CUSTOM3.jpg"
+            alt="Custom Bracelet"
+            class="view-image"
+            loading="lazy"
+          />
+          <p>Customized for customer</p>
+        </div>
+        <div class="custom-item">
+          <img
+            src="images/CUSTOM4.jpg"
+            alt="Custom Bracelet"
+            class="view-image"
+            loading="lazy"
+          />
+          <p>Customized for customer</p>
+        </div>
+        <div class="custom-item">
+          <img
+            src="images/CUSTOM5.jpg"
+            alt="Custom Bracelet"
+            class="view-image"
+            loading="lazy"
+          />
+          <p>Customized for customer</p>
+        </div>
+      </div>
+      <div class="custom-creation">
+        <a href="contact.html"
+          ><button href="contact.html">Contact to Design</button></a
+        >
+      </div>
     </section>
-    
+
     <!-- Lightbox Container -->
     <div id="lightbox" class="lightbox">
-        <div class="lightbox-content">
-            <span class="lightbox-close">&times;</span>
-            <img id="lightbox-image" src="" alt="Lightbox Full View">
-            <div class="lightbox-controls">
-                <button class="prev">&larr;</button>
-                <button class="next">&rarr;</button>
-            </div>
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Full View" />
+        <div class="lightbox-controls">
+          <button class="prev">&larr;</button>
+          <button class="next">&rarr;</button>
         </div>
+      </div>
     </div>
-    
 
     <!-- Footer -->
     <footer>
-        <div class="client-care-container">
-            <div class="client-care">
-                <h3>Client Care</h3>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#care">Product Care & Repair</a></li>
-                    <li>Book an Appointment</li>                
-                </ul>
-            </div>
+      <div class="client-care-container">
+        <div class="client-care">
+          <h3>Client Care</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#care">Product Care & Repair</a></li>
+            <li>Book an Appointment</li>
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Classy Diamonds. All rights reserved.</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Classy Diamonds. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="cart.js"></script>
-</body>
+  </body>
 </html>
