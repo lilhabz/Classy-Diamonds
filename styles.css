@@ -142,6 +142,21 @@ button:hover {
     object-fit: cover;
 }
 
+.home-info {
+    background-color: #F5F5F5; /* Subtle background to highlight the section */
+    padding: 2rem 1rem;        /* Add breathing room above and below */
+    text-align: center;        /* Center all text/content in the section */
+  }
+  
+  .intro-text {
+    max-width: 800px;          /* Keeps the text from stretching too wide */
+    margin: 0 auto;            /* Centers the text block */
+    font-size: 1.2rem;         /* Slightly larger than default text */
+    font-style: italic;        /* Adds a classy touch */
+    line-height: 1.6;          /* Improves readability */
+    color: #333;               /* Dark gray text */
+  }
+  
 /* Store Section */
 .store {
     padding: 50px 15px;
