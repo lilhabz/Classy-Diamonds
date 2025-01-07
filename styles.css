@@ -7,7 +7,7 @@
 
 body, html {
     background-color: #F5F5F5;
-    overflow-x: hidden; /* Ensure no horizontal scrolling */
+    
 }
 
 a {
@@ -40,7 +40,8 @@ button:hover {
 }
 
 .navbar {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -588,6 +589,8 @@ footer {
         display: flex;
         justify-content: space-between; /* Align items across the navbar */
         align-items: center;
+        position: fixed;
+        width: 100%;
     }
 
     .logo {
@@ -800,7 +803,8 @@ footer {
         align-items: center; /* Vertically center items */
         justify-content: space-between; /* Space between logo, menu, and icons */
         padding: 10px; /* Add padding */
-        position: relative; /* Ensure proper stacking for dropdowns */
+        position: fixed; /* Ensure proper stacking for dropdowns */
+        width: 100%;
     }
 
     .navbar .logo {
@@ -1008,6 +1012,8 @@ footer {
     .navbar {
         padding: 20px 30px; /* Add slightly more padding for larger screens */
         justify-content: space-between; /* Maintain proper alignment */
+        position: fixed;
+        width: 100%;
     }
 
     .nav-links {
