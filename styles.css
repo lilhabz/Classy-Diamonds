@@ -544,6 +544,7 @@ footer {
   gap: 10px;
   margin-bottom: 15px; /* Increased margin between paragraphs */
 }
+
 .contact-info h2 {
   text-align: center;
   margin-bottom: 15px;
@@ -562,6 +563,67 @@ footer {
   border: none;
   border-radius: 5px;
 }
+/* Custom Ring Section */
+.custom-ring-section {
+  margin: 50px auto;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.custom-ring-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-ring-section .form-group {
+  margin-bottom: 20px;
+}
+
+.custom-ring-section label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.custom-ring-section input[type="radio"],
+.custom-ring-section input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.custom-ring-section select,
+.custom-ring-section input[type="text"],
+.custom-ring-section input[type="number"],
+.custom-ring-section textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.custom-ring-section .design-ring-btn {
+  background-color: #5a7d9a;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.custom-ring-section .design-ring-btn:hover {
+  background: #85b6df;
+  color: #000;
+}
+
+#formMessage {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: green; /* or red on error */
+}
+
 
 /* Map Styling */
 /* Map and About2 Image Styling */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classy Diamonds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/classyd1.png" alt="Classy Diamonds"
+        /></a>
+      </div>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-icons">
+        <a href="#search" class="icon"><i class="fas fa-search"></i></a>
+        <a href="#account" class="icon"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+    <!--Breadcrumb-->
+    <nav class="breadcrumb">
+      <ul></ul>
+    </nav>
+    <!-- Custom Ring Form Section -->
+<section class="custom-ring-section">
+    <h2>Design Your Custom Ring</h2>
+    <form id="customRingForm" enctype="multipart/form-data">
+      <!-- Metal Type -->
+      <div class="form-group">
+        <label><strong>Metal Type:</strong></label><br/>
+        <label>
+          <input type="radio" name="metal" value="Gold" required />
+          Gold
+        </label>
+        <label>
+          <input type="radio" name="metal" value="Silver" />
+          Silver
+        </label>
+        <label>
+          <input type="radio" name="metal" value="Platinum" />
+          Platinum
+        </label>
+      </div>
+      
+      <!-- Stone Shape -->
+      <div class="form-group">
+        <label><strong>Stone Shape:</strong></label><br/>
+        <select name="stoneShape" required>
+          <option value="Round">Round</option>
+          <option value="Princess">Princess</option>
+          <option value="Oval">Oval</option>
+          <option value="Pear">Pear</option>
+          <!-- Add more shapes as desired -->
+        </select>
+      </div>
+  
+      <!-- Stone Size -->
+      <div class="form-group">
+        <label for="stoneSize"><strong>Stone Size (in carats):</strong></label>
+        <input
+          type="number"
+          id="stoneSize"
+          name="stoneSize"
+          step="0.01"
+          min="0.10"
+          placeholder="e.g. 1.25"
+          required
+        />
+      </div>
+  
+      <!-- Ring Size -->
+      <div class="form-group">
+        <label for="ringSize"><strong>Ring Size (US):</strong></label>
+        <input
+          type="number"
+          id="ringSize"
+          name="ringSize"
+          step="0.5"
+          min="3"
+          max="13"
+          placeholder="e.g. 6.5"
+          required
+        />
+      </div>
+  
+      <!-- Inspiration Photos -->
+      <div class="form-group">
+        <label><strong>Upload Inspiration Photos (optional):</strong></label>
+        <input
+          type="file"
+          name="inspirationPhotos"
+          id="inspirationPhotos"
+          accept="image/*"
+          multiple
+        />
+      </div>
+  
+      <!-- Additional Notes -->
+      <div class="form-group">
+        <label for="additionalNotes"><strong>Additional Notes:</strong></label>
+        <textarea
+          id="additionalNotes"
+          name="additionalNotes"
+          rows="4"
+          placeholder="Tell us more about your design or special requests."
+        ></textarea>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="design-ring-btn">Submit Design Request</button>
+    </form>
+  
+    <!-- Placeholder for success/failure message -->
+    <div id="formMessage"></div>
+  </section>
+  
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="client-care-container">
+        <div class="client-care">
+          <h3>Client Care</h3>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#care">Product Care & Repair</a></li>
+            <li>Book an Appointment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Classy Diamonds. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
