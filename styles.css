@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-  background: #ffd700;
+  background: #85b6df;
   transform: scale(1.05);
 }
 
@@ -274,6 +274,7 @@ button:hover {
 .custom-item:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .custom-item img {
@@ -357,7 +358,7 @@ footer {
 }
 
 .client-care ul li a:hover {
-  color: #ffd700; /* Gold on hover */
+  color: #85b6df;
   text-decoration: underline;
 }
 
@@ -442,20 +443,20 @@ footer {
 
 /* Instagram Icon Specific Styling */
 .contact-icons .icon-instagram {
-  background-color: #e4405f; /* Instagram brand color */
+  background-color: #5a7d9a; /* Instagram brand color */
 }
 
 .contact-icons .icon-instagram:hover {
-  background-color: #c13584; /* Darker hover color for Instagram */
+  background-color: #5a7d9a; /* Darker hover color for Instagram */
 }
 
 /* Phone Icon Specific Styling */
 .contact-icons .icon-phone {
-  background-color: #25d366; /* Green for phone icon */
+  background-color: #5a7d9a; /* Green for phone icon */
 }
 
 .contact-icons .icon-phone:hover {
-  background-color: #128c7e; /* Darker green hover color */
+  background-color: #5a7d9a; /* Darker green hover color */
 }
 
 .contact-section {
@@ -526,7 +527,7 @@ footer {
 }
 
 .contact-form .btn-submit:hover {
-  background-color: #ffd700;
+  background-color: #85b6df;
 }
 
 .contact-info {
@@ -543,6 +544,10 @@ footer {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px; /* Increased margin between paragraphs */
+  color: black;
+}
+.contact-info p i {
+  color: #5a7d9a; /*background color*/
 }
 
 .contact-info h2 {
@@ -1299,7 +1304,7 @@ footer {
 }
 
 .lightbox-close:hover {
-  color: #ffd700; /* Gold on hover */
+  color: #85b6df; 
 }
 
 /* Lightbox Controls (Previous/Next) */
@@ -1326,6 +1331,6 @@ footer {
 }
 
 .lightbox-controls button:hover {
-  background: #ffd700; /* Gold */
+  background: #85b6df; 
   transform: scale(1.1);
 }
