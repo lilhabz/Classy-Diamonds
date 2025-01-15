@@ -398,6 +398,7 @@ footer {
   height: auto;
   object-fit: cover;
   border-radius: 10px; /* Rounded corners */
+  margin-top: 10px;
 }
 
 .about-text {
@@ -408,6 +409,7 @@ footer {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .about-text p {
