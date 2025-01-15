@@ -421,7 +421,11 @@ footer {
   display: flex;
   gap: 15px; /* Space between icons */
   margin-top: 10px; /* Add space above icons */
+  justify-content: center; /* Center icons */
 }
+
+
+
 
 .contact-icons a {
   display: inline-flex;
@@ -439,6 +443,8 @@ footer {
 
 .contact-icons a:hover {
   transform: scale(1.1); /* Enlarge slightly on hover */
+  background-color: #85b6df;
+  
 }
 
 /* Instagram Icon Specific Styling */
@@ -447,7 +453,7 @@ footer {
 }
 
 .contact-icons .icon-instagram:hover {
-  background-color: #5a7d9a; /* Darker hover color for Instagram */
+  background-color: #85b6df; /* Darker hover color for Instagram */
 }
 
 /* Phone Icon Specific Styling */
@@ -456,7 +462,7 @@ footer {
 }
 
 .contact-icons .icon-phone:hover {
-  background-color: #5a7d9a; /* Darker green hover color */
+  background-color: #85b6df; /* Darker green hover color */
 }
 
 .contact-section {
