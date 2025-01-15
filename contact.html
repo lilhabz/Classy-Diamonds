@@ -7,14 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Existing External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="contact-page">
     <!-- Navbar -->
     <header class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/classyd1.png" alt="Classy Diamonds"></a>
+            <a href="index.html">
+                <img src="images/classyd1.png" alt="Classy Diamonds">
+            </a>
         </div>
         <div class="hamburger-menu">
             <i class="fas fa-bars"></i>
@@ -44,42 +50,122 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
             <div class="contact-content">
-                <!-- Contact Form -->
+                <!-- Contact Form (Column 1) -->
                 <div class="contact-form">
                     <form action="submit_form.php" method="post">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Your Full Name" 
+                                required
+                            >
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Your Email Address" 
+                                required
+                            >
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="Your Phone Number"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <textarea
+                                id="message" 
+                                name="message" 
+                                placeholder="Your Message" 
+                                rows="5" 
+                                required
+                            ></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Submit</button>
                     </form>
                 </div>
+                <!-- End Contact Form -->
 
-                <!-- Contact Info -->
+                <!-- Appointment Form (Column 2) -->
+                <div class="appointment-form">
+                    <h2>Book an Appointment</h2>
+                    <form action="book_appointment.php" method="post">
+                        <!-- Appointment Type -->
+                        <div class="form-group">
+                            <label for="appointmentType">Appointment Type</label>
+                            <select 
+                                id="appointmentType" 
+                                name="appointmentType" 
+                                required
+                            >
+                                <option value="">Please Select</option>
+                                <option value="call">Phone Call</option>
+                                <option value="in-person">In Person</option>
+                            </select>
+                        </div>
+                
+                        <!-- Preferred Date -->
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date</label>
+                            <input 
+                                type="date" 
+                                id="preferredDate" 
+                                name="preferredDate" 
+                                required 
+                            />
+                        </div>
+                
+                        <!-- Additional Notes -->
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                rows="4"
+                                placeholder="Let us know any specific details or questions."
+                            ></textarea>
+                        </div>
+                
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+                <!-- End Appointment Form -->
+
+                <!-- Contact Info (Column 3) -->
                 <div class="contact-info">
                     <h2>Our Details</h2>
-                    <p><i class="fa-solid fa-location-dot"></i> One Woodbridge Center, Woodbridge Center Dr, Woodbridge Township, NJ 07095</p>
-                    <p><i class="fa-solid fa-phone"></i> +1 (234) 567-890</p>
-                    <p><i class="fa-solid fa-envelope"></i> classyqned@yahoo.com</p>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 
+                        One Woodbridge Center, Woodbridge Center Dr, Woodbridge Township, NJ 07095
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> 
+                        +1 (234) 567-890
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> 
+                        classyqned@yahoo.com
+                    </p>
                 </div>
+                <!-- End Contact Info -->
             </div>
-
-            
+        </div>
     </section>
+    <!-- End Contact Section -->
 
     <!-- Footer -->
     <footer>
@@ -98,7 +184,9 @@
         </div>
     </footer>
 
+    <!-- JS Files -->
     <script src="script.js"></script>
     <script src="cart.js"></script>
+
 </body>
 </html>
