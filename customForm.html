@@ -49,106 +49,110 @@
       <ul></ul>
     </nav>
     <!-- Custom Ring Form Section -->
-<section class="custom-ring-section">
-    <h2>Design Your Custom Ring</h2>
-    <form 
-      id="customRingForm" 
-      action="process_custom_ring.php" 
-      method="POST" 
-      enctype="multipart/form-data"
-    >
+    <section class="custom-ring-section">
+      <h2>Design Your Custom Ring</h2>
+      <form
+        id="customRingForm"
+        action="process_custom_ring.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Metal Type -->
+        <div class="form-group">
+          <label><strong>Metal Type:</strong></label
+          ><br />
+          <label>
+            <input type="radio" name="metal" value="Gold" required />
+            Gold
+          </label>
+          <label>
+            <input type="radio" name="metal" value="Silver" />
+            Silver
+          </label>
+          <label>
+            <input type="radio" name="metal" value="Platinum" />
+            Platinum
+          </label>
+        </div>
 
-      <!-- Metal Type -->
-      <div class="form-group">
-        <label><strong>Metal Type:</strong></label><br/>
-        <label>
-          <input type="radio" name="metal" value="Gold" required />
-          Gold
-        </label>
-        <label>
-          <input type="radio" name="metal" value="Silver" />
-          Silver
-        </label>
-        <label>
-          <input type="radio" name="metal" value="Platinum" />
-          Platinum
-        </label>
-      </div>
-      
-      <!-- Stone Shape -->
-      <div class="form-group">
-        <label><strong>Stone Shape:</strong></label><br/>
-        <select name="stoneShape" required>
-          <option value="Round">Round</option>
-          <option value="Princess">Princess</option>
-          <option value="Oval">Oval</option>
-          <option value="Pear">Pear</option>
-          <!-- Add more shapes as desired -->
-        </select>
-      </div>
-  
-      <!-- Stone Size -->
-      <div class="form-group">
-        <label for="stoneSize"><strong>Stone Size (in carats):</strong></label>
-        <input
-          type="number"
-          id="stoneSize"
-          name="stoneSize"
-          step="0.01"
-          min="0.10"
-          placeholder="e.g. 1.25"
-          required
-        />
-      </div>
-  
-      <!-- Ring Size -->
-      <div class="form-group">
-        <label for="ringSize"><strong>Ring Size (US):</strong></label>
-        <input
-          type="number"
-          id="ringSize"
-          name="ringSize"
-          step="0.5"
-          min="3"
-          max="13"
-          placeholder="e.g. 6.5"
-          required
-        />
-      </div>
-  
-      <!-- Inspiration Photos -->
-      <div class="form-group">
-        <label><strong>Upload Inspiration Photos (optional):</strong></label>
-        <input
-          type="file"
-          name="inspirationPhotos"
-          id="inspirationPhotos"
-          accept="image/*"
-          multiple
-        />
-      </div>
-  
-      <!-- Additional Notes -->
-      <div class="form-group">
-        <label for="additionalNotes"><strong>Additional Notes:</strong></label>
-        <textarea
-          id="additionalNotes"
-          name="additionalNotes"
-          rows="4"
-          placeholder="Tell us more about your design or special requests."
-          
-        ></textarea>
-      </div>
-  
-      <!-- Submit Button -->
-      <button type="submit" class="design-ring-btn">Submit Design Request</button>
-    </form>
-  
-    <!-- Placeholder for success/failure message -->
-    <div id="formMessage"></div>
-  </section>
-  
+        <!-- Stone Shape -->
+        <div class="form-group">
+          <label><strong>Stone Shape:</strong></label
+          ><br />
+          <select name="stoneShape" required>
+            <option value="Round">Round</option>
+            <option value="Princess">Princess</option>
+            <option value="Oval">Oval</option>
+            <option value="Pear">Pear</option>
+            <!-- Add more shapes as desired -->
+          </select>
+        </div>
 
+        <!-- Stone Size -->
+        <div class="form-group">
+          <label for="stoneSize"
+            ><strong>Stone Size (in carats):</strong></label
+          >
+          <input
+            type="number"
+            id="stoneSize"
+            name="stoneSize"
+            step="0.01"
+            min="0.10"
+            placeholder="e.g. 1.25"
+            required
+          />
+        </div>
+
+        <!-- Ring Size -->
+        <div class="form-group">
+          <label for="ringSize"><strong>Ring Size (US):</strong></label>
+          <input
+            type="number"
+            id="ringSize"
+            name="ringSize"
+            step="0.5"
+            min="3"
+            max="13"
+            placeholder="e.g. 6.5"
+            required
+          />
+        </div>
+
+        <!-- Inspiration Photos -->
+        <div class="form-group">
+          <label><strong>Upload Inspiration Photos (optional):</strong></label>
+          <input
+            type="file"
+            name="inspirationPhotos"
+            id="inspirationPhotos"
+            accept="image/*"
+            multiple
+          />
+        </div>
+
+        <!-- Additional Notes -->
+        <div class="form-group">
+          <label for="additionalNotes"
+            ><strong>Additional Notes:</strong></label
+          >
+          <textarea
+            id="additionalNotes"
+            name="additionalNotes"
+            rows="4"
+            placeholder="Tell us more about your design or special requests."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="design-ring-btn">
+          Submit Design Request
+        </button>
+      </form>
+
+      <!-- Placeholder for success/failure message -->
+      <div id="formMessage"></div>
+    </section>
 
     <!-- Footer -->
     <footer>

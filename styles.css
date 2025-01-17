@@ -339,29 +339,29 @@ button:hover {
 
 .cc-wrapper {
   display: flex;
-  flex-wrap: wrap;          /* Wrap on smaller screens */
-  align-items: center;      /* Vertically center items */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  align-items: center; /* Vertically center items */
   max-width: 1200px;
-  margin: 0 auto;           /* Center horizontally in container */
-  gap: 20px;                /* Space between text and image containers */
+  margin: 0 auto; /* Center horizontally in container */
+  gap: 20px; /* Space between text and image containers */
 }
 
 .cc-text {
-  flex: 1 1 500px;          /* Grow/shrink as needed, min ~500px if possible */
+  flex: 1 1 500px; /* Grow/shrink as needed, min ~500px if possible */
   padding: 20px;
 }
 
 .cc-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;              /* Dark gray text */
-  text-align: left;         /* Or center if you prefer */
+  color: #333; /* Dark gray text */
+  text-align: left; /* Or center if you prefer */
 }
 
 .cc-desc {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;              /* Slightly lighter gray */
+  color: #555; /* Slightly lighter gray */
   margin-bottom: 30px;
 }
 
@@ -377,14 +377,14 @@ button:hover {
 }
 .cc-btn:hover {
   background-color: #85b6df; /* Hover color for consistency */
-  color: #000;              /* Contrast on hover */
+  color: #000; /* Contrast on hover */
   transform: scale(1.05);
 }
 
 .cc-image-container {
-  flex: 1 1 400px;        /* Enough space for the image */
+  flex: 1 1 400px; /* Enough space for the image */
   padding: 20px;
-  text-align: center;     /* Center the image in its column */
+  text-align: center; /* Center the image in its column */
 }
 
 .cc-image {
@@ -394,7 +394,6 @@ button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   /* Adjust shadow intensity as you like */
 }
-
 
 /* ------------------------------------------
    FOOTER SECTION
@@ -554,7 +553,7 @@ footer {
   padding-bottom: 20px;
 }
 .contact-section h2 {
-  text-align: center;  
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -576,7 +575,7 @@ footer {
 .contact-form,
 .appointment-form,
 .contact-info {
-  width: 30%;      /* Each column ~30% wide -> total ~90% */
+  width: 30%; /* Each column ~30% wide -> total ~90% */
   max-width: none; /* Remove previous constraints for equal columns */
 }
 
@@ -746,7 +745,7 @@ footer {
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -843,7 +842,7 @@ footer {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  
+
   /* ...rest of your mobile styles (navbar, etc.) continue here... */
 }
 
