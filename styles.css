@@ -831,7 +831,7 @@ footer {
    RESPONSIVE STYLES
 ------------------------------------------ */
 @media (max-width: 768px) {
-  /* Stack the contact columns on small screens */
+  
   .contact-content {
     flex-direction: column;
   }
@@ -843,13 +843,13 @@ footer {
     margin-bottom: 20px;
   }
 
-  /* ...rest of your mobile styles (navbar, etc.) continue here... */
+  
 }
 
-/* [Other existing media queries remain unchanged] */
+
 
 /* ------------------------------------------
-   LIGHTBOX (IF USED)
+   LIGHTBOX 
 ------------------------------------------ */
 .lightbox {
   display: none;
@@ -919,4 +919,254 @@ footer {
 .lightbox-controls button:hover {
   background: #85b6df;
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto; /* Center the hamburger menu */
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .product-item,
+  .custom-item {
+    width: 100%;
+  }
+
+  .map-and-image {
+    flex-direction: column;
+  }
+
+  .map iframe,
+  .map-and-image .about-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .appointment-form,
+  .contact-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto; /* Center the hamburger menu */
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .product-item,
+  .custom-item {
+    width: 100%;
+  }
+
+  .map-and-image {
+    flex-direction: column;
+  }
+
+  .map iframe,
+  .map-and-image .about-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .appointment-form,
+  .contact-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    padding: 15px 25px;
+    align-items: center; /* Center align items */
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto; /* Center the hamburger menu */
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .product-item,
+  .custom-item {
+    width: 45%;
+  }
+
+  .map-and-image {
+    flex-direction: row;
+  }
+
+  .map iframe,
+  .map-and-image .about-image img {
+    width: 50%;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .appointment-form,
+  .contact-info {
+    width: 45%;
+    margin-bottom: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    padding: 20px 30px;
+    align-items: center; /* Center align items */
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto; /* Center the hamburger menu */
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .product-item,
+  .custom-item {
+    width: 30%;
+  }
+
+  .map-and-image {
+    flex-direction: row;
+  }
+
+  .map iframe,
+  .map-and-image .about-image img {
+    width: 50%;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .appointment-form,
+  .contact-info {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px 30px;
+    align-items: center; /* Center align items */
+  }
+
+  .nav-links {
+    gap: 50px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto; /* Center the hamburger menu */
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .product-item,
+  .custom-item {
+    width: 25%;
+  }
+
+  .map-and-image {
+    flex-direction: row;
+  }
+
+  .map iframe,
+  .map-and-image .about-image img {
+    width: 50%;
+    height: auto;
+  }
+
+  .contact-content {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .appointment-form,
+  .contact-info {
+    width: 30%;
+    margin-bottom: 0;
+  }
 }
